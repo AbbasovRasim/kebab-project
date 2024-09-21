@@ -1,13 +1,14 @@
 import { default as NextImage } from "next/image";
 // import Image from "next/image";
 
-const Image = () => {
+const Image = ({ src }: { src: string }) => {
   return (
     <NextImage
-      src={"/pictures/logo.png"}
-      alt={"lorem"}
-      width={500}
-      height={500}
+      src={src}
+      alt={"image"}
+      width={1500}
+      height={1200}
+      style={{ width: "100%", height: "auto" }}
     />
   );
 };

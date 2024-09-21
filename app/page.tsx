@@ -7,6 +7,7 @@ import axios from "axios";
 import { Cardfordb2 } from "@/Components/Card";
 import { Cardfordrink } from "@/Components/cardfordrink";
 import Link from "next/link";
+import CustomImage from "@/Components/Image";
 
 const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menue`;
 const urls = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menues`;
@@ -56,7 +57,7 @@ const Home = () => {
   return (
     <>
       <div className="container">
-        <h1 className="text-center py-5 text-gray-800 font-bold text-[30px] leading-[45px] text-lg ">
+        <h1 className="text-center py-5 text-gray-800 font-bold text-3xxl leading-[45px]">
           BBQ&Kebab
           <img
             className=" absolute left-46"
@@ -131,24 +132,25 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="text-center container py-5 ">
+      <div className="text-center container py-5">
         <h1 className="text-center py-5 text-gary-800 font-bold text-[30px] leading-[45px] text-lg ">
           Delivery
-          <img
-            className="absolute right-40"
-            src=" /pictures/Vector (5).png"
-            alt=""
-          />
-          <img
-            className="absolute left-40 mt-7"
-            src=" /pictures/Group (8).png"
-            alt=""
-          />
         </h1>
 
-        <p className="font-light py-5 text-sm text-gray-600 text-[16px] leading-[24,19px]">
+        <img
+          className="absolute right-40"
+          src=" /pictures/Vector (5).png"
+          alt=""
+        />
+        <img
+          className="absolute left-40 mt-7"
+          src=" /pictures/Group (8).png"
+          alt=""
+        />
+
+        <p className="font-light py-5 text-gray-600 text-sm md:text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the <br /> industry's standard dummy
+          industry. Lorem Ipsum has been the <br /> industry`s standard dummy
           text ever since the 1500s, when an unknown printer took a galley of
           type and <br /> scrambled it to make a type specimen book. It has
           survived not only five centuries, but also the leap into <br />{" "}
@@ -167,7 +169,7 @@ const Home = () => {
             </p>
             <p className="font-light text-sm text-gray-400">
               Lorem Ipsum is simply dummy text of the printing and <br />
-              typesetting industry. Lorem Ipsum has been the industry's <br />{" "}
+              typesetting industry. Lorem Ipsum has been the industry`s <br />{" "}
               standard dummy text ever since the 1500s, when an{" "}
             </p>
           </div>
@@ -179,23 +181,38 @@ const Home = () => {
             </p>
             <p className="font-light text-sm text-gray-400">
               Lorem Ipsum is simply dummy text of the printing and <br />
-              typesetting industry. Lorem Ipsum has been the industry's <br />{" "}
+              typesetting industry. Lorem Ipsum has been the industry`s <br />{" "}
               standard dummy text ever since the 1500s, when an{" "}
             </p>
           </div>
         </div>
-        <div>
-          <Link href="/contact">
-            <button className="hover:bg-black hover:text-white transition duration-300 ease-in-out py-2 px-8 border  shadow-grey shadow-lg   absolute left-48 bg-slate-50">
-              contact us
-            </button>
-          </Link>
+      </div>
 
-          <img
-            className="justify-items-center  items-center container"
-            src="/pictures/map.png"
-            alt=""
-          />
+      <div className="p-6 rounded-[60px] bg-white relative top-[60px]">
+        <div className="container">
+          <div className="relative">
+            <Link href="/contact">
+              <button className="hover:bg-black hover:text-white transition duration-300 ease-in-out py-2 px-8 border shadow-grey shadow-lg absolute left-0  bg-slate-50">
+                contact us
+              </button>
+            </Link>
+
+            {/* <img
+              className="justify-items-center items-center"
+              src="/pictures/map.png"
+              alt=""
+            /> */}
+
+            {/* <Image
+              src={"/pictures/map.png"}
+              alt="Image"
+              width={1500}
+              height={1200}
+              style={{ width: "100%", height: "auto" }}
+            /> */}
+
+            <CustomImage src="/pictures/map.png" />
+          </div>
         </div>
       </div>
     </>
