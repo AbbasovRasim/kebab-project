@@ -9,7 +9,7 @@ const HeaderTop = () => {
           <Image />
         </Link>
 
-        <button className="py-2 px-8 border rounded-full shadow-grey shadow-lg">
+        <button className=" hover-text-lg  hover:bg-[rgba(22,160,54,1)] hover:text-white transition duration-300 ease-in-out py-2 px-8 border rounded-full shadow-grey shadow-lg">
           +1 (816) 482 1513
         </button>
       </div>

@@ -4,3 +4,8 @@ export interface BCard {
   title: string;
   description: string;
 }
+
+export interface DCard {
+  id: number;
+  img: string;
+}
