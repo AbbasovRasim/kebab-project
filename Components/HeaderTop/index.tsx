@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Image from "../Image";
+import CustomImage from "@/Components/Image";
 
 const HeaderTop = () => {
   return (
     <div className="container">
       <div className="flex justify-between items-center">
         <Link href={"/"} className="max-w-[200px]">
-          <Image />
+          <CustomImage src="/pictures/logo.png" />
         </Link>
 
         <button className=" hover-text-lg  hover:bg-[rgba(22,160,54,1)] hover:text-white transition duration-300 ease-in-out py-2 px-8 border rounded-full shadow-grey shadow-lg">
