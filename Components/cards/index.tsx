@@ -23,7 +23,7 @@ export const Cardfordb2 = ({
           {title}
         </p>
         {/* <p className=" absolute">{price}</p> */}
-        <div className="  hover: cursor-default text-sm font-normal  text-[rgba(49, 49, 49, 1)] py-5 justify-center  grid grid-cols-2 ">
+        <div className="  hover: cursor-default text-sm font-normal  text-gray-700 py-5 justify-center  grid grid-cols-2 ">
           <div className=" ">
             <p className="font-bold ">{ingredientsname}</p>
             {ingredients && (

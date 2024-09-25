@@ -9,6 +9,7 @@ import Link from "next/link";
 import CustomImage from "@/Components/Image";
 import HomeGalery from "./galery";
 import { Cardfordb } from "@/Components/Card";
+import GoogleMapComponent from "../components/map";
 
 const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menue`;
 const urls = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menues`;
@@ -198,8 +199,9 @@ const Home = () => {
               height={1200}
               style={{ width: "100%", height: "auto" }}
             /> */}
-
-            <CustomImage src="/pictures/map.png" />
+            {/* 
+            <CustomImage src="/pictures/map.png" /> */}
+            <GoogleMapComponent />
           </div>
         </div>
       </div>
