@@ -29,7 +29,7 @@ export const Cardfordb2 = ({
             {ingredients && (
               <>
                 {ingredients.map((value) => (
-                  <p className="hover:text-green cursor-default" key={value}>
+                  <p className="hover:text-green  cursor-default" key={value}>
                     {value}
                   </p>
                 ))}

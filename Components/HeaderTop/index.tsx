@@ -3,7 +3,7 @@ import CustomImage from "@/Components/Image";
 
 const HeaderTop = () => {
   return (
-    <div className="container">
+    <div className="container hidden lg:block">
       <div className="flex justify-between items-center">
         <Link href={"/"} className="max-w-[200px]">
           <CustomImage src="/pictures/logo.png" />

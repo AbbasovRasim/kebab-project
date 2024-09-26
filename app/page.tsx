@@ -77,7 +77,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 justify-items-center  ">
+        <div className="grid 2xl:grid-cols-3 lg:grid-cols-1 justify-items-center  ">
           {menue.map((obj: BCard) => (
             <Cardfordb
               key={obj.id}
@@ -94,7 +94,7 @@ const Home = () => {
             />
           ))}
         </div>
-        <div className="grid grid-cols-2 justify-items-center  ">
+        <div className="grid xl:grid-cols-2  md-grid-cols-1 justify-items-center  ">
           {menues.map((obj: BCard) => (
             <Cardfordb2
               key={obj.id}
@@ -127,7 +127,7 @@ const Home = () => {
         <h1 className="text-center py-5 text-gary-800 font-bold text-3xl ">
           Delivery
         </h1>
-        {/* 
+
         <img
           className="absolute right-40"
           src=" /pictures/Vector (5).png"
@@ -137,9 +137,9 @@ const Home = () => {
           className="absolute left-40 mt-7"
           src=" /pictures/Group (8).png"
           alt=""
-        /> */}
+        />
 
-        <p className="font-light py-5 text-gray-600 text-base">
+        <p className="font-light py-5 text-gray-600 text-base  ">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the <br /> industry`s standard dummy
           text ever since the 1500s, when an unknown printer took a galley of

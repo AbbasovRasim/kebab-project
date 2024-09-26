@@ -3,7 +3,7 @@ import CustomImage from "@/Components/Image";
 import Link from "next/link";
 export const Footer = () => {
   return (
-    <footer className="bg-black pt-[70px]">
+    <footer className="bg-black pt-[70px] hidden xl:block">
       <div className="container grid grid-cols-4 justify-center py-10">
         <Link href={"/"} className="  max-w-[150px] ">
           <CustomImage src="/pictures/footerlogo.png" />

@@ -3,11 +3,11 @@ import HomeSwiper from "@/Components/swiper";
 // Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { Pagination } from "swiper/modules";
+
 const HomeGalery = () => {
   return (
     <Swiper // install Swiper modules
-      className="justify-items-center"
+      className="  w-full xl:w-1/2 lg:w-1/2 md:w-1/2"
       grabCursor={true}
       centeredSlides={true}
       loop={true}
