@@ -8,8 +8,9 @@ export interface BCard {
   shortDesc: string;
   price: number;
   ingredientsname: string;
+
   ingredients: string[];
-  servedWithname: string;
+  servedWithname: string[];
   servedWith: string[];
   category: string[];
   icon: FC;

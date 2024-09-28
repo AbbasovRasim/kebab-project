@@ -26,6 +26,7 @@ export const Cardfordb2 = ({
         <div className="  hover: cursor-default text-sm font-normal  text-gray-700 py-5 justify-center  grid grid-cols-2 ">
           <div className=" ">
             <p className="font-bold ">{ingredientsname}</p>
+
             {ingredients && (
               <>
                 {ingredients.map((value) => (

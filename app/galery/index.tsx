@@ -7,7 +7,7 @@ import { Autoplay } from "swiper/modules";
 const HomeGalery = () => {
   return (
     <Swiper // install Swiper modules
-      className="  w-full xl:w-1/2 lg:w-1/2 md:w-1/2"
+      className="  w-full xl:w-1/2  lg:w-1/2 md:w-1/2"
       grabCursor={true}
       centeredSlides={true}
       loop={true}

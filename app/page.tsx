@@ -1,15 +1,14 @@
 "use client";
-// import Cardfordb from "@/Components/Cards";
+
 import { useState, useEffect } from "react";
 import { BCard } from "./interfaces";
 import axios from "axios";
 import { Cardfordb2 } from "@/Components/Cards";
-
+import MapComponent from "@/Components/map";
 import Link from "next/link";
-import CustomImage from "@/Components/Image";
+// import GoogleMapComponent from "@/Components/Map";
 import HomeGalery from "./galery";
 import { Cardfordb } from "@/Components/Card";
-import GoogleMapComponent from "../components/map";
 
 const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menue`;
 const urls = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menues`;
@@ -56,7 +55,7 @@ const Home = () => {
           /> */}
 
         <div className=" ">
-          <p className="text-center text-base font-light text-gray-400 py-5 ">
+          <p className="text-center text-base font-light text-gray-400 py-5   ">
             Barbecue in Kansas City is more than a menu item or a method of
             preparation. It’s an institution, rich with <br /> history and
             culinary tradition that shapes the city’s dining landscape every day
@@ -153,25 +152,23 @@ const Home = () => {
         </p>
 
         <div className=" container justify-items-center items-center  gap-10 py-11 grid grid-cols-2">
-          <div className="justify-items-center grid items-center  ">
+          <div className="justify-items-center grid  ">
             <img src="/pictures/eatsuber.png" alt="" />
-            <p className="py-5 text-gray-800 font-medium text- ">Uber Eats</p>
+            <p className="py-5 text-gray-800 font-medium  ">Uber Eats</p>
             <p className="font-light text-sm text-gray-400">
               Lorem Ipsum is simply dummy text of the printing and <br />
-              typesetting industry. Lorem Ipsum has been the industry`s <br />{" "}
-              standard dummy text ever since the 1500s, when an{" "}
+              typesetting industry. Lorem Ipsum has been the industry`s <br />
+              standard dummy text ever since the 1500s, when an
             </p>
           </div>
 
-          <div className="justify-items-center grid items-center ">
+          <div className="justify-items-center grid  ">
             <img src="/pictures/doordash.png" alt="" />
-            <p className="py-5 text-gray-800 font-medium text-[20px] ">
-              Doordash
-            </p>
+            <p className="py-5 text-gray-800 font-medium  ">Doordash</p>
             <p className="font-light text-sm text-gray-400">
               Lorem Ipsum is simply dummy text of the printing and <br />
-              typesetting industry. Lorem Ipsum has been the industry`s <br />{" "}
-              standard dummy text ever since the 1500s, when an{" "}
+              typesetting industry. Lorem Ipsum has been the industry`s <br />
+              standard dummy text ever since the 1500s, when an
             </p>
           </div>
         </div>
@@ -185,13 +182,11 @@ const Home = () => {
                 contact us
               </button>
             </Link>
-
             {/* <img
               className="justify-items-center items-center"
               src="/pictures/map.png"
               alt=""
             /> */}
-
             {/* <Image
               src={"/pictures/map.png"}
               alt="Image"
@@ -199,9 +194,9 @@ const Home = () => {
               height={1200}
               style={{ width: "100%", height: "auto" }}
             /> */}
-            {/* 
-            <CustomImage src="/pictures/map.png" /> */}
-            <GoogleMapComponent />
+            {/* <CustomImage src="/pictures/map.png" /> * */}
+            {/* <GoogleMapComponent /> */}
+            <MapComponent />
           </div>
         </div>
       </div>
