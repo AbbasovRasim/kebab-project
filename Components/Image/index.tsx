@@ -1,7 +1,7 @@
 import { default as NextImage } from "next/image";
 // import Image from "next/image";
 
-const Image = ({ src }: { src: string }) => {
+const Image = ({ src, className }: { src: string; className?: string }) => {
   return (
     <NextImage
       src={src}
@@ -9,6 +9,7 @@ const Image = ({ src }: { src: string }) => {
       width={1500}
       height={1200}
       style={{ width: "100%", height: "auto" }}
+      className={className}
     />
   );
 };

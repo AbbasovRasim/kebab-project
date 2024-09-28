@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { BCard } from "./interfaces";
 import axios from "axios";
-import { Cardfordb2 } from "@/Components/Cards";
+import { Cardfordb2 } from "@/Components/cards";
 import MapComponent from "@/Components/map";
 import Link from "next/link";
 // import GoogleMapComponent from "@/Components/Map";
@@ -78,36 +78,15 @@ const Home = () => {
 
         <div className="grid 2xl:grid-cols-3 lg:grid-cols-1 justify-items-center  ">
           {menue.map((obj: BCard) => (
-            <Cardfordb
-              key={obj.id}
-              id={obj.id}
-              img={obj.img}
-              shortDesc={obj.shortDesc}
-              title={obj.title}
-              price={obj.price}
-              ingredientsname={obj.ingredientsname}
-              ingredients={obj.ingredients}
-              servedWithname={obj.servedWithname}
-              servedWith={obj.servedWith}
-              category={obj.category}
-            />
+            <Cardfordb key={obj.id} {...obj} />
           ))}
         </div>
+
+        {/* TODO Bu iki hissəni datada birləşdirmək -> json server-də */}
+
         <div className="grid xl:grid-cols-2  md-grid-cols-1 justify-items-center  ">
           {menues.map((obj: BCard) => (
-            <Cardfordb2
-              key={obj.id}
-              id={obj.id}
-              img={obj.img}
-              shortDesc={obj.shortDesc}
-              title={obj.title}
-              price={obj.price}
-              ingredientsname={obj.ingredientsname}
-              ingredients={obj.ingredients}
-              servedWithname={obj.servedWithname}
-              servedWith={obj.servedWith}
-              category={obj.category}
-            />
+            <Cardfordb2 key={obj.id} {...obj} />
           ))}
         </div>
       </div>
@@ -132,6 +111,7 @@ const Home = () => {
           src=" /pictures/Vector (5).png"
           alt=""
         />
+
         <img
           className="absolute left-40 mt-7"
           src=" /pictures/Group (8).png"

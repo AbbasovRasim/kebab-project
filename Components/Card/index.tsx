@@ -1,4 +1,5 @@
 import { BCard } from "@/app/interfaces";
+import FoodExtraInfo from "../FoodExtraInfo";
 
 export const Cardfordb = ({
   img,
@@ -28,10 +29,8 @@ export const Cardfordb = ({
             <p className="font-bold hover: cursor-default">{ingredientsname}</p>
             {ingredients && (
               <>
-                {ingredients.map((value) => (
-                  <p className="hover:text-green cursor-default" key={value}>
-                    {value}
-                  </p>
+                {ingredients.map((value, index) => (
+                  <FoodExtraInfo key={index} name={value} />
                 ))}
               </>
             )}
